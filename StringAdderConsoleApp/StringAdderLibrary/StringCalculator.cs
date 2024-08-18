@@ -18,7 +18,8 @@ public class StringCalculator : IStringCalculator
             if (!string.IsNullOrEmpty(number))
             {
                 int integer = int.Parse(number);
-                result.Add(integer);
+                if (integer < 1001)
+                    result.Add(integer);
             }
         }
 

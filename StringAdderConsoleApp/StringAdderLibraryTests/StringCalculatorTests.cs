@@ -14,6 +14,7 @@ public class StringCalculatorTests
         new object[] { "1\n2,3", 6 },
         new object[] { "//;\n1;2", 3 },
         new object[] { "1001, 2", 2 },
+        new object[] { "1000, 2", 1002 },
         new object[] { "//[|||]\n1|||2|||3", 6 },
         new object[] { "//[|][%]\n1|2%3", 6 },
         new object[] { "//[|||][%%]\n1|||2%%3", 6 },
