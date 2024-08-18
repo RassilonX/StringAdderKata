@@ -6,6 +6,6 @@ public class StringCalculator : IStringCalculator
 {
     public int Calculate(string stringToCalculate)
     {
-        throw new NotImplementedException();
+        return 0;
     }
 }
