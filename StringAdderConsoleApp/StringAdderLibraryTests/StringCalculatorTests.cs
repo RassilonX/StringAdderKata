@@ -35,6 +35,20 @@ public class StringCalculatorTests
         Assert.IsType<int>(result);
     }
 
+    [Fact]
+    public void DebugTest()
+    {
+        // Arrange
+        var stringCalculator = new StringCalculator();
+
+        // Act
+        var result = stringCalculator.Calculate("1,1,2,3,5");
+
+        // Assert
+        Assert.Equal(12, result);
+        Assert.IsType<int>(result);
+    }
+
     public static IEnumerable<object[]> StringCalculatorNegativeCases =>
     new[]
     {
